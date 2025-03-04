@@ -1,10 +1,7 @@
 import { bootstrapApplication } from '@angular/platform-browser';
 import { AppComponent } from './app/app.component';
-import { provideRouter, Routes} from '@angular/router';
-
-const routes: Routes = [
-  // Routes seront ajoutées ultérieurement
-];
+import { provideRouter } from '@angular/router';
+import { routes } from './app/app.routes';
 
 bootstrapApplication(AppComponent, {
   providers: [

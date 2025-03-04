@@ -15,14 +15,14 @@ interface Feature {
     <section class="py-16" id="features">
       <div class="container">
         <div class="text-center mb-16">
-          <h2 class="text-4xl font-bold mb-5 text-text">Pourquoi choisir Teamoop ?</h2>
-          <p class="text-xl max-w-3xl mx-auto text-text opacity-80">Notre plateforme offre des fonctionnalités uniques pour faciliter votre entrée dans le monde de l'open-source</p>
+          <h2 class="text-3xl lg:text-4xl font-bold mb-5 text-text">Pourquoi choisir Teamoop ?</h2>
+          <p class="text-lg lg:text-xl max-w-3xl mx-auto text-text opacity-80">Notre plateforme offre des fonctionnalités uniques pour faciliter votre entrée dans le monde de l'open-source</p>
         </div>
-        
+
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          <div class="bg-white rounded shadow p-8 transition-transform hover:-translate-y-1" *ngFor="let feature of features()">
+          <div class="bg-white rounded shadow p-6 lg:p-8 transition-transform hover:-translate-y-1" *ngFor="let feature of features()">
             <div class="text-4xl text-primary mb-5" [innerHTML]="feature.icon"></div>
-            <h3 class="text-2xl font-medium mb-4 text-text">{{ feature.title }}</h3>
+            <h3 class="text-xl lg:text-2xl font-medium mb-4 text-text">{{ feature.title }}</h3>
             <p class="text-text opacity-80">{{ feature.description }}</p>
           </div>
         </div>

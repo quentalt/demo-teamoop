@@ -1,13 +1,14 @@
 import { Component, signal } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-footer',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, RouterLink],
   template: `
-    <footer class="bg-text text-white py-16">
-      <div class="container">
+    <footer class="bg-text text-white py-12 lg:py-16">
+      <div class="container px-4">
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 mb-10">
           <div>
             <div class="flex items-center mb-4">
@@ -33,7 +34,7 @@ import { CommonModule } from '@angular/common';
               </a>
             </div>
           </div>
-          
+
           <div>
             <h3 class="text-lg font-medium mb-5 relative after:content-[''] after:absolute after:bottom-[-8px] after:left-0 after:w-10 after:h-0.5 after:bg-primary">Liens rapides</h3>
             <ul class="list-none p-0">
@@ -43,7 +44,7 @@ import { CommonModule } from '@angular/common';
               <li class="mb-2.5"><a href="#contact" class="text-white opacity-80 no-underline hover:opacity-100 transition-opacity">Contact</a></li>
             </ul>
           </div>
-          
+
           <div>
             <h3 class="text-lg font-medium mb-5 relative after:content-[''] after:absolute after:bottom-[-8px] after:left-0 after:w-10 after:h-0.5 after:bg-primary">Ressources</h3>
             <ul class="list-none p-0">
@@ -53,7 +54,7 @@ import { CommonModule } from '@angular/common';
               <li class="mb-2.5"><a href="#" class="text-white opacity-80 no-underline hover:opacity-100 transition-opacity">FAQ</a></li>
             </ul>
           </div>
-          
+
           <div>
             <h3 class="text-lg font-medium mb-5 relative after:content-[''] after:absolute after:bottom-[-8px] after:left-0 after:w-10 after:h-0.5 after:bg-primary">Légal</h3>
             <ul class="list-none p-0">
@@ -64,7 +65,7 @@ import { CommonModule } from '@angular/common';
             </ul>
           </div>
         </div>
-        
+
         <div class="text-center pt-8 border-t border-white/10 text-sm opacity-70">
           <p>&copy; {{ currentYear() }} Teamoop. Tous droits réservés.</p>
         </div>
