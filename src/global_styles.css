@@ -40,10 +40,6 @@
     @apply py-16;
   }
 
-  .text-center {
-    @apply text-center;
-  }
-
   .card {
     @apply bg-white rounded shadow p-5 mb-5;
   }
